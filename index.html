@@ -13,10 +13,10 @@
 <header>
   <div class="frame-top "></div>
   <div class="eyecatch">
-    <img src="img/adtDSC_8755.jpg" alt="">
-    <h1>Cafe journal</h1>
+    <img class="eyecatch-img" src="img/adtDSC_8755.jpg" alt="">
+    <h1 class="name">Cafe journal</h1>
   </div>
-  <hr>
+  <hr class="header-hr">
   <div class="header-menu">
     <button>Home</button>
     <button>Concept</button>
@@ -25,32 +25,36 @@
     <button>Contact</button>
   </div>
   <div class="frame-bottom"></div>
+  <div id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 <div class="concept block">
  <div class="concept-content">
-  <img src="img/ogasuta458A7873_TP_V.jpg" alt="">
-  <p class="concept-sentence">
-    ブランドショップやサロンが立ち並び、<br>
-    おしゃれでありながらも落ち着いた雰囲気の<br>
-    南青山にひっそりと佇む赤い屋根の一軒家<br>
-    Cafe journal
-    <br>
-    <br>
-    お料理は、家庭料理のような<br>
-    あたたかみがありつつどこか特別感の香る、<br>
-    シェフこだわりのお料理です。
-    <br>
-    <br>
-    当店大人気のスイーツメニューは、毎朝手作り<br>
-    しております。懐かしく優しい甘さで、心を<br>
-    満たします。
-    <br>
-    <br>
-    アットホームな雰囲気の空間で、<br>
-    ゆったりとお食事を楽しみたいときに、<br>
-    一息つきたいカフェタイムに、ぜひ
-    ご利用ください。
-  </p>
+    <img class="concept-img" src="img/ogasuta458A7873_TP_V.jpg" alt="">
+    <p class="concept-sentence">
+      ブランドショップやサロンが立ち並び、
+      おしゃれでありながらも落ち着いた雰囲気の
+      南青山にひっそりと佇む赤い屋根の一軒家
+      Cafe journal
+      <br>
+      <br>
+      お料理は、家庭料理のような
+      あたたかみがありつつどこか特別感の香る、
+      シェフこだわりのお料理です。
+      <br>
+      <br>
+      当店大人気のスイーツメニューは、毎朝手作り
+      しております。懐かしく優しい甘さで、心を満たします。
+      <br>
+      <br>
+      アットホームな雰囲気の空間で、
+      ゆったりとお食事を楽しみたいときに、
+      一息つきたいカフェタイムに、ぜひ
+      ご利用ください。
+    </p>
   </div>
   <p class="concept-word">La culture, C’est comme la confiture, moins on en a, plus on l’étale.</p>
 </div>
@@ -65,16 +69,16 @@
   </div>
   <div class="menu-images">
     <div class="menu-detail">
-      <img src="img/カレーimg.png" alt="">
-      <p>ココナッツフィッシュカレー</p>
+      <img class="menu-detail-img" src="img/カレーimg.png" alt="">
+      <p class="menu-detail-p">ココナッツフィッシュカレー</p>
     </div>
     <div class="menu-detail">
-      <img src="img/カルボナーラリゾット.png" alt="">
-      <p>濃厚カルボナーラリゾット</p>
+      <img class="menu-detail-img" src="img/カルボナーラリゾット.png" alt="">
+      <p class="menu-detail-p">濃厚カルボナーラリゾット</p>
     </div>
     <div class="menu-detail">
-      <img src="img/スパゲティ.png" alt="">
-      <p>スパゲティプッタネスカ</p>
+      <img class="menu-detail-img" src="img/スパゲティ.png" alt="">
+      <p class="menu-detail-p">スパゲティプッタネスカ</p>
     </div>
   </div>
   <div class="menu-title">
@@ -83,16 +87,16 @@
   </div>
   <div class="menu-images">
     <div class="menu-detail">
-      <img src="img/ティラミス.png" alt="">
-      <p>クラシックティラミス</p>
+      <img class="menu-detail-img" src="img/ティラミス.png" alt="">
+      <p class="menu-detail-p">クラシックティラミス</p>
     </div>
     <div class="menu-detail">
-      <img src="img/649270_s.jpg" alt="">
-      <p>ブルーベリーレアチーズケーキ</p>
+      <img class="menu-detail-img" src="img/649270_s.jpg" alt="">
+      <p class="menu-detail-p">ブルーベリーレアチーズケーキ</p>
     </div>
     <div class="menu-detail">
-      <img src="img/2255294_s.jpg" alt="">
-      <p>フルーツたっぷりミルクレープ</p>
+      <img class="menu-detail-img" src="img/2255294_s.jpg" alt="">
+      <p class="menu-detail-p">フルーツたっぷりミルクレープ</p>
     </div>
   </div>
   <div class="menu-button2">
@@ -101,21 +105,41 @@
 </div>
 <div class="shop-info block">
   <h2 class="title">Shop info</h2>
-  <div class="shop-info-address">
-  <p>
-    〒107-0064 <br>
-    東京都港区南青山10-11-1 <br>
-    <br>
-    表参道駅A1出口より徒歩10分<br>
-    <br>
-    緑地の向かいにある<br>
-    赤い屋根が目印の小さなお店です
-  </p>
-  <p class="shop-info-address-TEL">TEL:0120-3456-7890 <br>
-    営業時間: 10:00~20:00(日曜定休日)
-  </p>
-  </div>
+  <div class="shop-info-contain">
+      <p class="shop-info-address">
+        〒107-0064 <br>
+        東京都港区南青山10-11-1 <br>
+        <br>
+        表参道駅A1出口より徒歩10分<br>
+        <br>
+        緑地の向かいにある<br>
+        赤い屋根が目印の小さなお店です
+        <br>
+        <br>
+        <br>
+        TEL:0120-3456-7890 <br>
+        営業時間: 10:00~20:00(日曜定休日)
+      </p>
+      <img class="shop-info-img" src="img/ドア.png" alt="">
+    </div>
 </div>
+<footer>
+  <div class="footer-menu">
+    <button>Home</button>
+    <button>Concept</button>
+    <button>Menu</button>
+    <button>Shop info</button>
+    <button>Contact</button>
+  </div>
+  <hr>
+  <div class="footer-nav">
+  <p class="footer-nav-title">Cafe journal</p>
+  <p>カフェ　ジャーナル</p>
+  <img src="img/20190513183031.jpg" alt="">
+  <p>@Cafe journal . All Right Reserved</p>
+  </div>
+  <div class="frame-bottom"></div>
+</footer>
 </body>
 
 </html>
