@@ -43,7 +43,6 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:'';
     content:none;
 }
 
@@ -102,7 +101,8 @@ button{
     border: none;
     background-color: #F1E9CE;
     font-family:  'Noto Serif JP', serif;
-    font-size: 20px;
+    font-size: 18px;
+    margin:0 auto;
 }
 
 .title{
@@ -144,7 +144,7 @@ p{
     object-fit: cover;
     margin-left: 5%;
 }
-.name{
+.title-name{
     font-size: 35px;
     font-weight: 100;
     position: absolute;
@@ -160,10 +160,6 @@ p{
  width: 60%;
  margin-left: 20%;
 }
-.header-menu p{
-    font-size: 20px;
-}
-
 .concept{
     position: relative;
 }
@@ -177,7 +173,7 @@ p{
 }
 .concept-img{
     width: 65%;
-    height: 90%;
+    height: 80vh;
     object-fit: cover;
     opacity: 0.7;
 }
@@ -192,7 +188,6 @@ p{
     position: absolute;
     top: 5px;
     left: 5px;
-    font-size: 30px;
     margin: 10px;
     width: 250px;
     z-index: 1;
@@ -222,7 +217,7 @@ p{
 }
 .menu-detail-img{
     width: 100%;
-    height: 30vh;
+    height: 16vw;
     object-fit: fill;
 }
 .menu-detail-p{
@@ -243,13 +238,14 @@ p{
 }
 .shop-info-contain{
     display: flex;
-    width: 90%;
-    margin: 5%;
+    width: 96%;
+    margin: 2%;
     justify-content: space-between;
 }
 .shop-info-address{
     display: block;
-    margin-top: 5%;
+    padding: 10% 3%;
+
 }
 .shop-info-img{
     width: 70%;
@@ -257,13 +253,11 @@ p{
     object-fit: cover;
 }
 .footer-menu{
-    width: 16%;
-    margin: 40px 42%;
-    display: inline block;
-    text-align: center;
+    margin: 40px;
 }
 .footer-menu button{
-    margin: 10px;
+    margin: 5px auto;
+    display: block;
 }
 .footer-nav{
     display: block;
@@ -277,11 +271,51 @@ p{
     height: 30px;
     margin: 20px;
 }
+.contact-title{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
 .form{
-    margin: 10%;
-    width:  80%;
-    height: 60vh;
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
     border: 1px solid;
+}
+.form-item{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    justify-content:space-between;
+}
+label{
+    width: 30%;
+    text-align: left;
+}
+input{
+    width: 60%;
+    background-color: #F1E9CE;
+    border: none;
+    border-bottom: 1px solid;
+}
+textarea{
+    width: 60%;
+    background-color: #F1E9CE;
+}
+.contact-address{
+    width: 50%;
+    margin: 30px 25% 80px;
+    text-align: center;
+}
+.contact-menu{
+ border: none;
+ display: flex;
+ justify-content: space-between;
+ text-align: center;
+ size: 15px;
+ width: 60%;
+ margin: 40px 20%;
 }
 @media screen and (max-width : 768px){
 body{
@@ -292,7 +326,6 @@ body{
     display: none;
 }
  #hamburger {
-    width: 40px;
     height: 40px;
     position: absolute;
     cursor: pointer;
@@ -333,6 +366,10 @@ body{
   .concept-sentence{
       width:90%;
   }
+  .concept-word{
+      font-size: 35px;
+      width: 230px;
+  }
   .menu-images{
       display: block;
   }
@@ -341,11 +378,14 @@ body{
 
   }
   .menu-detail-img{
-      height: 60vh;
+      height: 50vw;
       object-fit: cover;
   }
   .menu-detail-p{
       padding-bottom: 40px;
+  }
+  .menu-button2{
+      padding-top: 10px;
   }
   .shop-info{
       height: 100vh;
@@ -357,15 +397,27 @@ body{
   }
   .shop-info-img{
     width: 100%;
-    position: absolute;
     top: 10px;
     height: 50vh;
 
   }
   .shop-info-address{
     position: absolute;
-    width: 80%;
-    margin-left: 20%;
-    top: 55vh;
+    width: 100%;
+    text-align: center;
+    top: 70vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .form{
+      width: 450px;
+      height: 450px;
+  }
+  .contact-menu{
+      display: block;
+  }
+  .contact-menu button{
+      display: block;
+      margin: 5px auto;
   }
 }
