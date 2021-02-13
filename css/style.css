@@ -279,7 +279,7 @@ p{
 .form{
     margin: 0 auto;
     width: 600px;
-    height: 400px;
+    height: 500px;
     border: 1px solid;
 }
 .form-item{
@@ -302,6 +302,12 @@ input{
 textarea{
     width: 60%;
     background-color: #F1E9CE;
+}
+.submit-button{
+    border:1px solid;
+    padding: 10px;
+    width: 20%;
+    margin:40px 40%;
 }
 .contact-address{
     width: 50%;
@@ -411,7 +417,7 @@ body{
   }
   .form{
       width: 450px;
-      height: 450px;
+      height: 500px;
   }
   .contact-menu{
       display: block;
