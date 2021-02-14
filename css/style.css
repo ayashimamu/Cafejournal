@@ -236,6 +236,59 @@ p{
 .menu-button2 button{
      border-bottom: 1px solid;
 }
+.modal-menu-title{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.menu-list{
+    padding: 20px;
+}
+.list-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.list-content-child{
+    padding: 20px;
+    width: 45%;
+}
+.child-left{
+    border-left: 1px solid;
+}
+.list-title{
+    font-size: 30px;
+}
+.menu-type{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.menu-type-content{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+    font-size: 12px;
+    width: 85%;
+}
+.price{
+    width: 10%;
+}
+.menu-contents li{
+    padding-bottom: 12px;
+}
+.remark{
+    margin-top: 200px;
+}
+.remark hr{
+    width: 200px;
+}
+.remark-list{
+    text-align: center;
+    margin: 0 auto;
+}
 .shop-info-contain{
     display: flex;
     width: 96%;
