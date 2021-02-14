@@ -43,7 +43,6 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:'';
     content:none;
 }
 
@@ -102,7 +101,8 @@ button{
     border: none;
     background-color: #F1E9CE;
     font-family:  'Noto Serif JP', serif;
-    font-size: 20px;
+    font-size: 18px;
+    margin:0 auto;
 }
 
 .title{
@@ -133,20 +133,18 @@ p{
   border-left: none;
   border-right: none;
 }
-img{
-  width: 40%;
-}
 .eyecatch{
     padding-top: 10px;
     position: relative;
     border: none;
 }
-.eyecatch img{
-    width: 80%;
+.eyecatch-img{
+    width: 90%;
     height: 85vh;
-    margin-left: 10%;
+    object-fit: cover;
+    margin-left: 5%;
 }
-h1{
+.title-name{
     font-size: 35px;
     font-weight: 100;
     position: absolute;
@@ -159,39 +157,37 @@ h1{
  display: flex;
  justify-content: space-between;
  text-align: center;
- width: 50%;
- margin-left: 25%;
-}
-.header-menu p{
-    font-size: 20px;
+ width: 60%;
+ margin-left: 20%;
 }
 .concept{
-    height: 95vh;
     position: relative;
 }
 .concept-content{
     width: 96%;
-    height: 90%;
+    height: 100%;
     margin: 5% 2%;
     display: flex;
     z-index:2;
 
 }
-.concept img{
+.concept-img{
     width: 65%;
+    height: 80vh;
+    object-fit: cover;
     opacity: 0.7;
 }
 .concept-sentence{
     width: 30%;
-    margin-top: 10%;
-    margin-left: 3%;
+    height: 90%;
+    padding: 20px;
     line-height: 1.5em;
+    font-size: 15px;
 }
 .concept-word{
     position: absolute;
     top: 5px;
     left: 5px;
-    font-size: 30px;
     margin: 10px;
     width: 250px;
     z-index: 1;
@@ -217,13 +213,14 @@ h1{
     display: block;
     width: 30%;
     margin-left: 3%;
-    height: 300px;
+    height: 30%;
 }
-.menu-detail img{
+.menu-detail-img{
     width: 100%;
-    height: 250px;
+    height: 16vw;
+    object-fit: fill;
 }
-.menu-detail p{
+.menu-detail-p{
     text-align: center;
     padding-top: 10px;
 }
@@ -239,11 +236,194 @@ h1{
 .menu-button2 button{
      border-bottom: 1px solid;
 }
+.shop-info-contain{
+    display: flex;
+    width: 96%;
+    margin: 2%;
+    justify-content: space-between;
+}
 .shop-info-address{
-    padding:80px;
+    display: block;
+    padding: 10% 3%;
+
+}
+.shop-info-img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+.footer-menu{
+    margin: 40px;
+}
+.footer-menu button{
+    margin: 5px auto;
     display: block;
 }
-.shop-info-address-TEL{
-    margin-top: 20px;
-    font-size: 10px;
+.footer-nav{
+    display: block;
+    text-align: center;
+}
+.footer-nav-title{
+    font-size: 30px;
+}
+.footer-nav img{
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+}
+.contact-title{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+.form{
+    margin: 0 auto;
+    width: 600px;
+    height: 500px;
+    border: 1px solid;
+}
+.form-item{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    justify-content:space-between;
+}
+label{
+    width: 30%;
+    text-align: left;
+}
+input{
+    width: 60%;
+    background-color: #F1E9CE;
+    border: none;
+    border-bottom: 1px solid;
+}
+textarea{
+    width: 60%;
+    background-color: #F1E9CE;
+}
+.submit-button{
+    border:1px solid;
+    padding: 10px;
+    width: 20%;
+    margin:40px 40%;
+}
+.contact-address{
+    width: 50%;
+    margin: 30px 25% 80px;
+    text-align: center;
+}
+.contact-menu{
+ border: none;
+ display: flex;
+ justify-content: space-between;
+ text-align: center;
+ size: 15px;
+ width: 60%;
+ margin: 40px 20%;
+}
+@media screen and (max-width : 768px){
+body{
+    padding-top: 30px;
+    margin: 5%;
+}
+.header-menu,.header-hr{
+    display: none;
+}
+ #hamburger {
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 10px;
+    right: 20px;
+    transition: 0.4s;
+    width: 40px;
+  }
+
+  #hamburger span {
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #000000;
+    transition: 0.8s;
+  }
+
+  #hamburger span:nth-of-type(1) {
+    top: 10px; /* ハンバーガーメニューの1本目の棒 */
+  }
+
+  #hamburger span:nth-of-type(2) {
+    top: 20px; /* ハンバーガーメニューの2本目の棒 */
+  }
+
+  #hamburger span:nth-of-type(3) {
+    top: 30px; /* ハンバーガーメニューの3本目の棒 */
+  }
+  .concept-content{
+      display: block;
+  }
+  .concept-img{
+      width: 100%;
+  }
+  .concept-sentence{
+      width:90%;
+  }
+  .concept-word{
+      font-size: 35px;
+      width: 230px;
+  }
+  .menu-images{
+      display: block;
+  }
+  .menu-detail{
+      width: 100%;
+
+  }
+  .menu-detail-img{
+      height: 50vw;
+      object-fit: cover;
+  }
+  .menu-detail-p{
+      padding-bottom: 40px;
+  }
+  .menu-button2{
+      padding-top: 10px;
+  }
+  .shop-info{
+      height: 100vh;
+  }
+  .shop-info-contain{
+      position: relative;
+      display: block;
+
+  }
+  .shop-info-img{
+    width: 100%;
+    top: 10px;
+    height: 50vh;
+
+  }
+  .shop-info-address{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 70vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .form{
+      width: 450px;
+      height: 500px;
+  }
+  .contact-menu{
+      display: block;
+  }
+  .contact-menu button{
+      display: block;
+      margin: 5px auto;
+  }
 }
