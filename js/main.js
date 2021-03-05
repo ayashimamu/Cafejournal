@@ -2,17 +2,24 @@ $("#hamburger").click(function () {
     $(this).toggleClass("active");
     $(".hamburger-menu").toggleClass("open");
 });
-$(".concept-scroll").click(function () {
-  var concept = $(".concept").offset().top;
-  $('html, body').animate({ scrollTop: concept });
-});
-$(".menu-scroll").click(function () {
-  var menu = $(".menu").offset().top;
-  $('html,body').animate({ scrollTop: menu });
-});
-$(".shop-info-scroll").click(function () {
-  var shopinfo = $(".shop-info").offset().top;
-  $('html,body').animate({ scrollTop: shopinfo });
+$(".js_smooth-scroll").click(function (){
+  const clicked = this;
+  const scrollTargetSelector = $(this).data("scroll-target");
+  var offset = $(scrollTargetSelector).offset().top;
+  $('html.body').animate({
+    scrollTop: offset});
 });
 
-const modalmenu = document.getElementsByClassName(".modal-menu");
+const openbuttonClick = document.getElementById("modal-open");
+const closebuttonClick = document.getElementById("modal-close");
+openbuttonClick.addEventListener('click', () => {
+  document.getElementById("modal-window").style.visibility = "visible";
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${window.scrollY}px`;
+});
+closebuttonClick.addEventListener('click', () => {
+  document.getElementById("modal-window").style.visibility
+    = "hidden";
+  document.body.style.position = "";
+  document.body.style.top = "";
+});

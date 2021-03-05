@@ -19,10 +19,10 @@
   <hr class="header-hr">
   <div class="header-menu">
     <button>Home</button>
-    <button class="concept-scroll">Concept</button>
-    <button class="menu-scroll">Menu</button>
-    <button class="shop-info-scroll">Shop info</button>
-    <button><a href=contact.html>Contact</a></button>
+    <button class="js_smooth-scroll" data-scroll-target=".concept">Concept</button>
+    <button class="js_smooth-scroll" data-scroll-target=".menu">Menu</button>
+    <button class="js_smooth-scroll" data-scroll-target=".shop-info">Shop info</button>
+    <button data-scroll-target=><a  class="contact-button" href=contact.html>Contact</a></button>
   </div>
   <div class="frame-bottom"></div>
   <div id="hamburger">
@@ -70,7 +70,7 @@
 <div class="menu block">
   <div class="menu-head">
   <h2 class="title">Menu</h2>
-  <button class="menu-button">View More</button>
+  <button class="menu-button" id="modal-open">View More</button>
   </div>
   <div class="menu-type-top">
     <p>Meals</p>
@@ -108,11 +108,13 @@
       <p class="menu-detail-p">フルーツたっぷりミルクレープ</p>
     </div>
   </div>
-  <div class="menu-button2">
+  <div id="modal-open2" class="menu-button2">
   <button>View more</button>
   </div>
 </div>
-<div class="modal-menu block">
+<div id="modal-window">
+<div class="modal-inner">
+<div id="modal-menu" class="block">
   <div class="frame-top"></div>
   <h1 class="modal-menu-title">
    Menu
@@ -329,6 +331,9 @@
     </div>
   </div>
   <div class="frame-bottom"></div>
+</div>
+</div>
+<button id="modal-close">×閉じる</button>
 </div>
 </div>
 <div class="shop-info block">
