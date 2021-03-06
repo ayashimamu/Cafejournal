@@ -7,21 +7,29 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 
 <body>
 <header>
   <div class="frame-top "></div>
   <div class="eyecatch">
+    <div class="sliderArea">
+    <div class="eyecatch-slide">
     <img class="eyecatch-img" src="img/eyecatch-img.jpg" alt="">
+    <img class="eyecatch-img" src="img/eyecatch-img2.jpg" alt="">
+    <img class="eyecatch-img" src="img/eyecatch-img3.jpg" alt="">
     <h1 class="title-name">Cafe journal</h1>
+    </div>
+    </div>
   </div>
   <hr class="header-hr">
   <div class="header-menu">
     <button>Home</button>
-    <button class="js_smooth-scroll" data-scroll-target=".concept">Concept</button>
-    <button class="js_smooth-scroll" data-scroll-target=".menu">Menu</button>
-    <button class="js_smooth-scroll" data-scroll-target=".shop-info">Shop info</button>
+    <button class="js_smooth_scroll" data-scroll-target=".concept">Concept</button>
+    <button class="js_smooth_scroll" data-scroll-target=".menu">Menu</button>
+    <button class="js_smooth_scroll" data-scroll-target=".shop-info">Shop info</button>
     <button data-scroll-target=><a  class="contact-button" href=contact.html>Contact</a></button>
   </div>
   <div class="frame-bottom"></div>
@@ -70,7 +78,7 @@
 <div class="menu block">
   <div class="menu-head">
   <h2 class="title">Menu</h2>
-  <button class="menu-button" id="modal-open">View More</button>
+  <button class="menu-button">View More</button>
   </div>
   <div class="menu-type-top">
     <p>Meals</p>
@@ -108,7 +116,7 @@
       <p class="menu-detail-p">フルーツたっぷりミルクレープ</p>
     </div>
   </div>
-  <div id="modal-open2" class="menu-button2">
+  <div class="menu-button" id="menu-button2">
   <button>View more</button>
   </div>
 </div>
@@ -376,6 +384,8 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 
