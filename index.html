@@ -7,22 +7,29 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 
 <body>
 <header>
   <div class="frame-top "></div>
   <div class="eyecatch">
+    <div id="eyecatch-slide">
     <img class="eyecatch-img" src="img/eyecatch-img.jpg" alt="">
+    <img class="eyecatch-img" src="img/eyecatch-img2.jpg" alt="">
+    <img class="eyecatch-img" src="img/eyecatch-img3.jpg" alt="">
+    </div>
     <h1 class="title-name">Cafe journal</h1>
+  </div>
   </div>
   <hr class="header-hr">
   <div class="header-menu">
     <button>Home</button>
-    <button class="concept-scroll">Concept</button>
-    <button class="menu-scroll">Menu</button>
-    <button class="shop-info-scroll">Shop info</button>
-    <button><a href=contact.html>Contact</a></button>
+    <button class="js_smooth_scroll" data-scroll-target=".concept">Concept</button>
+    <button class="js_smooth_scroll" data-scroll-target=".menu">Menu</button>
+    <button class="js_smooth_scroll" data-scroll-target=".shop-info">Shop info</button>
+    <button data-scroll-target=><a  class="contact-button" href=contact.html>Contact</a></button>
   </div>
   <div class="frame-bottom"></div>
   <div id="hamburger">
@@ -108,11 +115,13 @@
       <p class="menu-detail-p">フルーツたっぷりミルクレープ</p>
     </div>
   </div>
-  <div class="menu-button2">
+  <div class="menu-button" id="menu-button2">
   <button>View more</button>
   </div>
 </div>
-<div class="modal-menu block">
+<div id="modal-window">
+<div class="modal-inner">
+<div id="modal-menu" class="block">
   <div class="frame-top"></div>
   <h1 class="modal-menu-title">
    Menu
@@ -331,6 +340,9 @@
   <div class="frame-bottom"></div>
 </div>
 </div>
+<button id="modal-close">×閉じる</button>
+</div>
+</div>
 <div class="shop-info block">
   <h2 class="title">Shop info</h2>
   <div class="shop-info-contain">
@@ -371,6 +383,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 
