@@ -11,20 +11,32 @@ $(".js_smooth_scroll").click(function () {
   });
 });
 
-
+let scrolledPos
 const openbuttonClick= Array.from(document.querySelectorAll(".menu-button"));
 openbuttonClick.forEach((button) => {
   button.addEventListener('click', () => {
-    document.getElementById("modal-window").style.visibility = "visible";
-    document.body.style.position = 'fixed';
+   scrolledPos = window.scrollY;
+    document.getElementById
+    ("modal-window").style.visibility = "visible";
     document.body.style.top = `-${window.scrollY}px`;
-
+    document.body.style.position = 'fixed';
   })
 });
 const closebuttonClick = document.getElementById("modal-close");
 closebuttonClick.addEventListener('click', () => {
   document.getElementById("modal-window").style.visibility
     = "hidden";
-  document.body.style.position = "";
-  document.body.style.top = "";
+  document.body.removeAttribute("style");
+  window.scrollTo(0, scrolledPos);
+  console.log(scrolledPos);
+});
+$(function () {
+  $("#eyecatch-slide").slick({
+    autoplay: true,
+    autoplayspeed: 1000,
+    speed: 3000,
+    dots: false,
+    fade: true,
+    arrows: false,
+  });
 });
