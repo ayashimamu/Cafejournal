@@ -21,11 +21,10 @@ time, mark, audio, video {
 }
 
 body {
+    width: 100%;
     line-height:1;
     background-color: #F1E9CE;
-    margin: 10px 10%;
     font-family: 'Noto Serif JP', serif;
-
 }
 
 article,aside,details,figcaption,figure,
@@ -103,6 +102,14 @@ button{
     font-family:  'Noto Serif JP', serif;
     font-size: 18px;
     margin:0 auto;
+    outline: none;
+}
+button:hover{
+   color: rgba(0,0,0,0.5);
+}
+.body-inner{
+    width: 90%;
+    margin: 10px 5%;
 }
 .title{
   font-size: 30px;
@@ -249,6 +256,7 @@ button{
     top: 0;
     left: 0;
     overflow: scroll;
+    z-index: 2;
 }
 #modal-menu{
     width: 50%;
@@ -417,7 +425,7 @@ textarea{
 @media screen and (max-width : 768px){
 body{
     padding-top: 30px;
-    margin: 5%;
+    margin-top: 10px;
 }
 .header-menu,.header-hr{
     display: none;
@@ -500,9 +508,10 @@ body{
   #eyecatch-slide{
     height: 85vh;
   }
-  #eyecatch-img{
-      height: 100%;
-  }
+  .eyecatch-img {
+  min-height: 85vh !important;
+  object-fit: cover;
+}
   .concept-content{
       display: block;
   }
