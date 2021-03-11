@@ -2,7 +2,17 @@ $("#hamburger").click(function () {
     $(this).toggleClass("active");
     $(".hamburger-menu").toggleClass("open");
 });
-$(".js_smooth_scroll").click(function () {
+$(".js_smooth_scroll,.js_smooth_scroll_footer").click(function () {
+  const clicked = this;
+  const scrollTargetSelector = $(this).data("scroll-target");
+  var offset = $(scrollTargetSelector).offset().top;
+  $('html,body').animate({
+    scrollTop: offset
+  });
+});
+$(".js_smooth_scroll_hamburger").click(function () {
+  $("#hamburger").toggleClass("active");
+    $(".hamburger-menu").toggleClass("open");
   const clicked = this;
   const scrollTargetSelector = $(this).data("scroll-target");
   var offset = $(scrollTargetSelector).offset().top;

@@ -169,6 +169,11 @@ button:hover{
     text-decoration: none;
     color: black;
 }
+.contact-button-hamburger{
+    text-decoration: none;
+    color:white;
+}
+
 .concept{
     position: relative;
 }
